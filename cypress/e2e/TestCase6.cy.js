@@ -1,6 +1,6 @@
 describe('Testes de API - Automation Exercise', () => {
     
-    it('API 5 - POST busca produto', () => {
+    it('API 6 - POST busca produto sem parâmetro', () => {
         cy.searchProductSemParametro().then((response) => {
             expect(response.status).to.eq(200);
             
