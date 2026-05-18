@@ -1,0 +1,21 @@
+{
+    "usuario":{
+        "name": "tttttttttttttttteste",
+        "email": "automatizado@teste.com",
+        "password": "12345678",
+        "title": "Mrs",
+        "birth_date": "27",
+        "birth_month": "January",
+        "birth_year": "1966",
+        "firstname": "Teste",
+        "lastname": "Automatizado",
+        "company": "Teste",
+        "address1": "Rua Teste",
+        "address2": "404",
+        "country": "Canada",
+        "zipcode": "00000",
+        "state": "Alberta",
+        "city": "Teste",
+        "mobile_number": "11999999999"
+    }
+}
