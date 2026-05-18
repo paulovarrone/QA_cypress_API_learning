@@ -1,4 +1,4 @@
-# Testes Automatizados - Cypress
+# Testes Automatizados para API - Cypress
 
 Projeto de automação de testes E2E usando Cypress no site Automation Exercise.
 
