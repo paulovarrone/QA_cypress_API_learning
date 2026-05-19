@@ -9,6 +9,7 @@ describe('Testes de API - Automation Exercise', () => {
             expect(body.brands[0]).to.have.property('id');
             expect(body.brands[0]).to.have.property('brand');   
             expect(body.brands.length).to.be.greaterThan(0);
+            cy.log('Brands List:', JSON.stringify(body.brands, null, 2));
         });
     });
 });
