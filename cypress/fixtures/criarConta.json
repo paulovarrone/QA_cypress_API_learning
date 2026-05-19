@@ -17,5 +17,8 @@
         "state": "Alberta",
         "city": "Teste",
         "mobile_number": "11999999999"
+    },
+    "getUser": {
+        "email": "automatizado@teste.com"
     }
 }
