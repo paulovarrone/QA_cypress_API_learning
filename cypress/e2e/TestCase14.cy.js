@@ -1,12 +1,13 @@
 describe('Testes de API - Automation Exercise', () => {
     
-    it('API 14 - GET detalhes da conta de usuário por email', () => {
-        cy.getUserByEmail().then((response) => {
-            expect(response.status).to.eq(200);   
+    it('API 12 - DELETE deletar conta de usuário', () => {
+        cy.deleteUserAccount().then((response) => {
+            cy.log('Response:', response.body);
+            expect(response.status).to.eq(200);
             
             const body = JSON.parse(response.body);
             expect(body.responseCode).to.eq(200);
-            cy.log('User Detail:', JSON.stringify(body.user, null, 2));
+            expect(body.message).to.eq("Account deleted!");
         });
     });
 });
