@@ -1,0 +1,20 @@
+name: CI - Cypress API Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v7
+        # Testes de API: sem 'start'/'wait-on'.
+        # As requisições (cy.request) vão direto pro endpoint externo.
